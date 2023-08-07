@@ -1,0 +1,6 @@
+---
+Language:        C
+BasedOnStyle:    LLVM
+IndentWidth:     2
+UseTab:          Never
+ColumnLimit:     80
