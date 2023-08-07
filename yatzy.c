@@ -6,7 +6,7 @@
 
 int hand[5];
 
-/*ランダムに自分の最初のダイスを決定する関数*/
+/*ランダムに自分の最初のダイスを決定する*/
 void shuffle()
 {
     srand((unsigned int)time(NULL));
@@ -17,7 +17,7 @@ void shuffle()
     sleep(1);
 }
 
-/*ダイスの目を画面表示する関数*/
+/*ダイスの目を画面表示する*/
 void show()
 {
     int i;
@@ -31,7 +31,7 @@ void show()
     printf("\n");
 }
 
-/*ダイスの目を交換する関数*/
+/*ダイスの目を交換する*/
 void exchange()
 {
     int input;
@@ -44,13 +44,11 @@ void exchange()
         scanf("%d", &input);
         if (input == 1)
         {
-            /* i個目を交換する*/
             hand[i] = rand() % 6 + 1;
             printf("交換しました\n");
         }
         else if (input == 0)
         {
-            /* i個目を交換しない*/
             printf("保持しました\n");
         }
         else
@@ -407,7 +405,7 @@ void Yotpoint(struct point *a)
     a->yot = 50;
 }
 
-/*役を選択する関数*/
+/*役を選択する*/
 void selecting(struct point *a)
 {
     int snumber;
@@ -618,7 +616,7 @@ void sum(struct point *a)
     a->sum = a->one + a->two + a->three + a->four + a->five + a->six + a->chance + a->fourcard + a->fullhouse + a->ss + a->bs + a->yot + a->bonus;
 }
 
-/*手の表示、交換、役の選択を行う関数*/
+/*手の表示、交換、役の選択を行う*/
 void play(struct point *a)
 {
 
@@ -668,6 +666,7 @@ void quickreset(struct point *a)
     a->bonus = 0;
 }
 
+/*獲得済み役を表示*/
 void pointed(struct point *a)
 {
     printf("使用済み役\n");
@@ -733,6 +732,7 @@ void pointed(struct point *a)
     printf("\n");
 }
 
+/*結果表示*/
 void show_scores(struct point *a, struct point *b)
 {
     printf("\nResult\n");
