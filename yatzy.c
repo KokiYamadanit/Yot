@@ -615,10 +615,7 @@ void sum(struct point *a)
         a->bonus = 35;
     }
 
-    a->sum = a->one + a->two + a->three + a->four + a->five +
-             a->six + a->chance + a->fourcard +
-             a->fullhouse + a->ss +
-             a->bs + a->yot + a->bonus;
+    a->sum = a->one + a->two + a->three + a->four + a->five + a->six + a->chance + a->fourcard + a->fullhouse + a->ss + a->bs + a->yot + a->bonus;
 }
 
 /*手の表示、交換、役の選択を行う関数*/

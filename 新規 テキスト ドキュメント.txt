@@ -1,0 +1,18 @@
+    /*
+    printf("%-20s | %-10s | %-10s\n", "役", "Player1", "Player2");
+    printf("%-20s | %-10d | %-10d\n", "１の目", a->one, b->one);
+    printf("%-20s | %-10d | %-10d\n", "２の目", a->two, b->two);
+    printf("%-20s | %-10d | %-10d\n", "３の目", a->three, b->three);
+    printf("%-20s | %-10d | %-10d\n", "４の目", a->four, b->four);
+    printf("%-20s | %-10d | %-10d\n", "５の目", a->five, b->five);
+    printf("%-20s | %-10d | %-10d\n", "６の目", a->six, b->six);
+    printf("%-20s | %-10d | %-10d\n", "チャンス", a->chance, b->chance);
+    printf("%-20s | %-10d | %-10d\n", "フォーカード", a->fourcard, b->fourcard);
+    printf("%-20s | %-10d | %-10d\n", "フルハウス", a->fullhouse, b->fullhouse);
+    printf("%-20s | %-10d | %-10d\n", "Ｓストレート", a->ss, b->ss);
+    printf("%-20s | %-10d | %-10d\n", "Ｂストレート", a->bs, b->bs);
+    printf("%-20s | %-10d | %-10d\n", "ヨット", a->yot, b->yot);
+    printf("%-20s | %-10d | %-10d\n", "ボーナス", a->bonus, b->bonus);
+    printf("%-20s | %-10s | %-10s\n", "合計", "p1", "p2");
+    printf("%-20s | %-10d | %-10d\n", "合計", a->sum, b->sum);
+    */
