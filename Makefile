@@ -14,7 +14,7 @@ test: $(OBJT)
 	gcc -c $< -o $@
 
 .PHONY: all clean
-all: main
+all: main test
 
 clean:
 	rm -f main $(OBJS)
