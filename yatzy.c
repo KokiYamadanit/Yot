@@ -739,33 +739,3 @@ void show_scores(struct point *a, struct point *b)
         printf("引き分け\n");
     }
 }
-
-void print_score(struct point *a, struct point *b)
-{
-    FILE *fp;
-    int ch;
-    char filename[60];
-
-    printf("リザルト入力ファイル名:");
-    scanf("%s", filename);
-
-    // ファイルオープン処理
-    fp = fopen(filename, "w");
-    fprintf(fp, "%-20s%-10s%-10s\n", "役", "Player1", "Player2");
-    fprintf(fp, "%-20s%-10d%-10d\n", "１の目", a->one, b->one);
-    fprintf(fp, "%-20s%-10d%-10d\n", "２の目", a->two, b->two);
-    fprintf(fp, "%-20s%-10d%-10d\n", "３の目", a->three, b->three);
-    fprintf(fp, "%-20s%-10d%-10d\n", "４の目", a->four, b->four);
-    fprintf(fp, "%-20s%-10d%-10d\n", "５の目", a->five, b->five);
-    fprintf(fp, "%-20s%-10d%-10d\n", "６の目", a->six, b->six);
-    fprintf(fp, "%-20s%-10d%-10d\n", "チャンス", a->chance, b->chance);
-    fprintf(fp, "%-20s%-10d%-10d\n", "フォーカード", a->fourcard, b->fourcard);
-    fprintf(fp, "%-20s%-10d%-10d\n", "フルハウス", a->fullhouse, b->fullhouse);
-    fprintf(fp, "%-20s%-10d%-10d\n", "Ｓストレート", a->ss, b->ss);
-    fprintf(fp, "%-20s%-10d%-10d\n", "Ｂストレート", a->bs, b->bs);
-    fprintf(fp, "%-20s%-10d%-10d\n", "ヨット", a->yot, b->yot);
-    fprintf(fp, "%-20s%-10d%-10d\n", "ボーナス", a->bonus, b->bonus);
-    fprintf(fp, "%-20s%-10s%-10s\n", "合計", "p1", "p2");
-    fprintf(fp, "%-20s%-10d%-10d\n", "合計", a->sum, b->sum);
-    fclose(fp);
-}
