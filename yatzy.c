@@ -767,5 +767,6 @@ void print_score(struct point *a, struct point *b)
     fprintf(fp, "%-20s%-10d%-10d\n", "ボーナス", a->bonus, b->bonus);
     fprintf(fp, "%-20s%-10s%-10s\n", "合計", "p1", "p2");
     fprintf(fp, "%-20s%-10d%-10d\n", "合計", a->sum, b->sum);
+    
     fclose(fp);
 }
