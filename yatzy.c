@@ -738,6 +738,7 @@ void show_scores(struct point *a, struct point *b)
     {
         printf("引き分け\n");
     }
+
 }
 
 void print_score(struct point *a, struct point *b)
