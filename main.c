@@ -13,7 +13,7 @@ int main(void)
     int hand[5];
 
     /*役が埋まるまでゲームをする*/
-    for (int j = 0; j < 1; j++)
+    for (int j = 0; j < 12; j++)
     {
         printf("%d回目\n", j + 1);
         printf("Player1:%s\n", player1);

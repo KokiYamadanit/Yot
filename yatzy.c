@@ -427,9 +427,8 @@ void selecting(struct point *a)
             selecting(a);
         }
     }
-
     /*2が入力されたとき*/
-    if (snumber == 2)
+    else if (snumber == 2)
     {
         if (isTwo() && a->two == 0)
         {
@@ -443,9 +442,8 @@ void selecting(struct point *a)
             selecting(a);
         }
     }
-
     /*3が入力されたとき*/
-    if (snumber == 3)
+    else if (snumber == 3)
     {
         if (isThree() && a->three == 0)
         {
@@ -459,9 +457,8 @@ void selecting(struct point *a)
             selecting(a);
         }
     }
-
     /*4が入力されたとき*/
-    if (snumber == 4)
+    else if (snumber == 4)
     {
         if (isFour() && a->four == 0)
         {
@@ -475,9 +472,8 @@ void selecting(struct point *a)
             selecting(a);
         }
     }
-
     /*5が入力されたとき*/
-    if (snumber == 5)
+    else if (snumber == 5)
     {
         if (isFive() && a->five == 0)
         {
@@ -491,9 +487,8 @@ void selecting(struct point *a)
             selecting(a);
         }
     }
-
     /*6が入力されたとき*/
-    if (snumber == 6)
+    else if (snumber == 6)
     {
         if (isSix() && a->six == 0)
         {
@@ -507,9 +502,8 @@ void selecting(struct point *a)
             selecting(a);
         }
     }
-
     /*7が入力されたとき*/
-    if (snumber == 7)
+    else if (snumber == 7)
     {
         if (isChance() && a->chance == 0)
         {
@@ -523,9 +517,8 @@ void selecting(struct point *a)
             selecting(a);
         }
     }
-
     /*8が入力されたとき*/
-    if (snumber == 8)
+    else if (snumber == 8)
     {
         if (isFourCard() && a->fourcard == 0)
         {
@@ -539,9 +532,8 @@ void selecting(struct point *a)
             selecting(a);
         }
     }
-
     /*9が入力されたとき*/
-    if (snumber == 9)
+    else if (snumber == 9)
     {
         if (isFullhouse() && a->fullhouse == 0)
         {
@@ -555,9 +547,8 @@ void selecting(struct point *a)
             selecting(a);
         }
     }
-
     /*10が入力されたとき*/
-    if (snumber == 10)
+    else if (snumber == 10)
     {
         if (isSS() && a->ss == 0)
         {
@@ -571,9 +562,8 @@ void selecting(struct point *a)
             selecting(a);
         }
     }
-
     /*11が入力されたとき*/
-    if (snumber == 11)
+    else if (snumber == 11)
     {
         if (isBS() && a->bs == 0)
         {
@@ -587,9 +577,8 @@ void selecting(struct point *a)
             selecting(a);
         }
     }
-
     /*12が入力されたとき*/
-    if (snumber == 12)
+    else if (snumber == 12)
     {
         if (isYot() && a->yot == 0)
         {
