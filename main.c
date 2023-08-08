@@ -29,5 +29,6 @@ int main(void)
     sum(&b);
 
     show_scores(&a, &b);
+    print_score(&a, &b);
     return 0;
 }
