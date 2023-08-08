@@ -1,2 +1,5 @@
 /vscode/
 *.o
+*.text
+/test_point
+/main

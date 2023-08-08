@@ -10,7 +10,6 @@ int main(void)
     quickreset(&b);
     char player1[60];
     char player2[60];
-    int hand[5];
 
     /*役が埋まるまでゲームをする*/
     for (int j = 0; j < 12; j++)
