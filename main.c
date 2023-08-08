@@ -12,7 +12,7 @@ int main(void)
     char player2[60];
 
     /*役が埋まるまでゲームをする*/
-    for (int j = 0; j < 12; j++)
+    for (int j = 0; j < 1; j++)
     {
         //printf("%d回目\n", j + 1);
         printf("Player1:%s\n", player1);
@@ -29,6 +29,7 @@ int main(void)
     sum(&b);
 
     show_scores(&a, &b);
+    print_score(&a, &b);
 
     return 0;
 }

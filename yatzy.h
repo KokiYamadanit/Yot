@@ -54,5 +54,6 @@ void quickreset(struct point *a);
 void pointed(struct point *a);
 void sum(struct point *a);
 void show_scores(struct point *a, struct point *b);
+void print_score(struct point *a, struct point *b);
 
 #endif
