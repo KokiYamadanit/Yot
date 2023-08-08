@@ -746,7 +746,7 @@ void print_score(struct point *a, struct point *b)
     int ch;
     char filename[60];
 
-    printf("リザルト入力ファイル名:");
+    printf("結果入力ファイル名:");
     scanf("%s", filename);
 
     // ファイルオープン処理
