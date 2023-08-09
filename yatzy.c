@@ -35,10 +35,9 @@ void exchange()
 {
     int input;
     printf("[ダイスの交換]\n");
+    srand((unsigned int)time(NULL));
     for (int i = 0; i < 5; i++)
     {
-        sleep(1);
-        srand((unsigned int)time(NULL));
         /* ダイスの目を交換するかどうかの入力を受け付ける */
         printf("%d個目のダイス(%d):%dを交換しますか？(y→1/n→0)", i + 1, i + 1, hand[i]);
         scanf("%d", &input);
