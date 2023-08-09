@@ -19,6 +19,8 @@ struct point
     int bonus;
 };
 
+extern int hand[5];
+
 void shuffle();
 void show();
 void exchange();

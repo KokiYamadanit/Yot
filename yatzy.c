@@ -5,7 +5,6 @@
 #include <unistd.h>
 
 int hand[5];
-
 /*ランダムに自分の最初のダイスを決定する*/
 void shuffle()
 {
@@ -38,6 +37,7 @@ void exchange()
     printf("[ダイスの交換]\n");
     for (int i = 0; i < 5; i++)
     {
+        sleep(1);
         srand((unsigned int)time(NULL));
         /* ダイスの目を交換するかどうかの入力を受け付ける */
         printf("%d個目のダイス(%d):%dを交換しますか？(y→1/n→0)", i + 1, i + 1, hand[i]);

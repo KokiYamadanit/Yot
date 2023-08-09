@@ -1,5 +1,5 @@
 OBJS = main.o yatzy.o
-OBJT = test_point.o
+OBJT = test_point.o yatzy.o
 
 main: $(OBJS)
 	gcc $(OBJS) -o main
